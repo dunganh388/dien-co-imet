@@ -1,0 +1,34 @@
+section.introduce {
+	.conten_introduce {
+	    padding: 80px 0px;
+	    background: #fbfbfb;
+	    .index {
+	    	h3 {
+	    		color: #2db253;
+			    font-size: 28px;
+			    font-family: robo_m;
+			    margin-bottom: 30px;
+			    text-transform: uppercase;
+	    	}
+	    	p {
+			    color: #424242;
+			    font-size: 15px;
+			    font-family: robo_l;
+			    margin-bottom: 20px;
+			}
+	    }
+	}
+}
+
+@media screen and (max-width: 991px){
+	section.introduce .conten_introduce {
+	    padding: 45px 0px;
+	}
+	section.introduce .conten_introduce .index h3 {
+	    font-size: 22px;
+	    margin-bottom: 12px;
+	}
+	section.introduce .conten_introduce .images img {
+	    margin: 0 auto;
+	}
+}

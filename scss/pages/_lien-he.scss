@@ -1,0 +1,110 @@
+section.contact {
+	.conten_contact {
+	    padding: 60px 0px 88px;
+	    .map {
+	    	iframe {
+			    width: 100%;
+			    height: 490px;
+			    border: 1px solid #dfdfdf;
+			}
+	    }
+	    .contact_index {
+		    border: 1px solid #dedede;
+		    padding: 30px;
+		    h3 {
+		    	color: #5e5e5e;
+			    font-size: 22px;
+			    margin-bottom: 20px;
+			    font-family: robo_m;
+		    }
+		    ul {
+		    	margin-bottom: 15px;
+		    	li {
+		    		list-style: none;
+		    		p {
+		    			margin-bottom: 5px;
+		    			i {
+		    				color: #f89d54;
+    						font-size: 18px;
+		    			}
+		    			span {
+		    				color: #5c5c5c;
+						    font-size: 16px;
+						    display: block;
+						    padding-left: 26px;
+						    margin-top: -22px;
+		    			}
+		    		}
+		    	}
+		    }
+		    p.note {
+			    color: #2db253;
+			    font-size: 15px;
+			    font-family: robo_l;
+			    font-style: italic;
+			    margin-bottom: 15px;
+			}
+			.form_contact {
+			    display: flex;
+			    justify-content: space-between;
+			    .left, .right {
+				    width: 48%;
+				}
+				input {
+					font-size: 15px;
+				}
+				textarea {
+				    resize: none;
+				    height: 143px;
+				}
+				.form_submit {
+				    text-align: right;
+				    button {
+					    background: #f7891f;
+					    border: 0;
+					    color: white;
+					    padding: 7px 15px;
+					    border-radius: 5px;
+					    font-size: 14px;
+					    text-transform: uppercase;
+					    font-family: robo_m;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px){
+	section.contact .conten_contact .contact_index {
+    	border: 1px solid #dedede;
+	    padding: 20px;
+	    margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	section.contact .conten_contact .map iframe {
+		display: none;
+	}
+	section.contact .conten_contact {
+	    padding: 20px 0px 65px;
+	}
+	section.contact .conten_contact .contact_index .form_contact {
+		flex-wrap: wrap;
+	}
+	section.contact .conten_contact .contact_index .form_contact .left, section.contact .conten_contact .contact_index .form_contact .right {
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px){
+	section.contact .conten_contact .contact_index h3 {
+	    font-size: 16px;
+	    margin-bottom: 15px;
+	}
+	section.contact .conten_contact .contact_index ul li p span {
+		font-size: 15px;
+	}
+}

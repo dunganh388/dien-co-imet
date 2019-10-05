@@ -1,0 +1,32 @@
+@import "base/global";
+@import "base/fonts";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/component";
+
+@import "pages/home";
+@import "pages/gioi-thieu";
+@import "pages/tuyen-dung";
+@import "pages/lien-he";
+
+
+
+
+/* ===================== responsive ================== */
+
+@media screen and (max-width: 1199px){
+
+}
+
+@media screen and (max-width: 991px){
+
+}
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 575px){
+
+}

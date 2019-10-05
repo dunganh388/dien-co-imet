@@ -1,0 +1,25 @@
+@font-face {
+    font-family: robo_r;
+    src:url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: robo_l;
+    src:url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: robo_m;
+    src:url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: robo_b;
+    src:url('../fonts/Roboto-Bold.ttf');
+}
+
+body {
+    font-family: 'robo_r';
+    overflow-x: hidden;
+    background: #fbfbfb;
+}
