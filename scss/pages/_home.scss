@@ -38,7 +38,86 @@ section.home_page {
 				    align-items: center;
 				    justify-content: center;
 				    margin: 0px 50px;
-		    		a {
+				    position: relative;
+				    &:first-child::before {
+				    	content: '';
+					    position: absolute;
+					    width: 365px;
+					    height: 365px;
+					    border-radius: 50%;
+					    box-sizing: border-box;
+					    border: 3px solid transparent;
+					    border-bottom-color: #fff;
+					    border-left-color: #fff;
+					    opacity: 0;
+					    visibility: hidden;
+					    transition: 0.4s all;
+					    transform: scale(0) rotate(90deg);
+				    }
+				    &:first-child {
+				    	&:hover::before {
+				    		opacity: 1;
+						    visibility: visible;
+						    transition: 0.4s all;
+						    transform: scale(1) rotate(45deg);
+				    	}
+				    }
+				    &:last-child::before {
+				    	content: '';
+					    position: absolute;
+					    width: 365px;
+					    height: 365px;
+					    border-radius: 50%;
+					    box-sizing: border-box;
+					    border: 3px solid transparent;
+					    border-top-color: #fff;
+					    border-right-color: #fff;
+					    transform: rotate(45deg);
+					    opacity: 0;
+					    visibility: hidden;
+					    transition: 0.4s all;
+					    transform: scale(0) rotate(90deg);
+				    }
+					&:last-child .list_hover {
+						a {
+							&:nth-child(1)  {
+						    	top: -107px;
+	    						left: 71px;
+						    }
+						     &:nth-child(2)  {
+						    	top: -50px;
+    							left: 205px;
+						    }
+						     &:nth-child(3)  {
+						    	top: 65px;
+	    						left: 252px;
+						    }
+						     &:nth-child(4)  {
+						    	top: 188px;
+	    						left: 210px;
+						    }
+						     &:nth-child(5)  {
+						    	top: 248px;
+	    						left: 71px;
+						    }
+						}
+					}
+				    &:last-child {
+				    	&:hover::before {
+				    		opacity: 1;
+						    visibility: visible;
+						    transition: 0.4s all;
+						    transform: scale(1) rotate(45deg);
+				    	}
+				    }
+				    &:hover .list_hover {
+				    	position: absolute;
+					    transition: 0.4s all;
+					    transform: scale(1) rotate(0deg);
+					    opacity: 1;
+					    visibility: visible;
+				    }
+		    		> a {
 		    			color: #2db253;
 					    text-transform: uppercase;
 					    font-size: 20px;
@@ -52,6 +131,7 @@ section.home_page {
 					    font-family: robo_b;
 					    position: relative;
 					    box-shadow: 0px 0px 10px 2px #1a7935;
+					    z-index: 9;
 					    &:hover {
 					    	color: #ff8e00;
 					    }
@@ -71,6 +151,53 @@ section.home_page {
 						    transition: 0.3s all;
 					    }
 		    		}
+		    		.list_hover {
+					    position: absolute;
+					    width: 100%;
+    					height: 100%;
+					    transition: 0.4s all;
+					    transform: scale(0) rotate(90deg);
+					    opacity: 0;
+					    visibility: hidden;
+					    a {
+				    	    box-shadow: 0px 0px 10px 2px #5b826654;
+						    background: white;
+						    width: 80px;
+						    height: 80px;
+						    position: absolute;
+						    display: flex;
+						    align-items: center;
+						    justify-content: center;
+						    border-radius: 50%;
+						    color: #2daf52;
+						    font-size: 15px;
+						    line-height: 1.2;
+						    border: 5px solid #2db053;
+						    &:hover {
+						    	color: #ff8e00;
+						    }
+						    &:nth-child(1)  {
+						    	top: -107px;
+	    						left: 71px;
+						    }
+						     &:nth-child(2)  {
+						    	top: -50px;
+	    						left: -58px;
+						    }
+						     &:nth-child(3)  {
+						    	top: 65px;
+	    						left: -108px;
+						    }
+						     &:nth-child(4)  {
+						    	top: 188px;
+	    						left: -58px;
+						    }
+						     &:nth-child(5)  {
+						    	top: 248px;
+	    						left: 71px;
+						    }
+					    }
+					}
 		    	}
 		    }
 		}
@@ -81,6 +208,13 @@ section.home_page {
     section.home_page .image-slide .info ul li {
         margin: 0px 10px;
     }
+}
+
+
+@media screen and (max-width: 1180px){
+    section.home_page .image-slide .info ul li .list_hover , section.home_page .image-slide .info ul li:first-child::before {
+	    display: none;
+	}
 }
 
 
