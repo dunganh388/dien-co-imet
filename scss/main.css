@@ -39,6 +39,9 @@ img {
 @font-face {
   font-family: robo_b;
   src: url("../fonts/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: svn;
+  src: url("../fonts/UTM Nyala.ttf"); }
 body {
   font-family: 'robo_r';
   overflow-x: hidden;
@@ -96,7 +99,21 @@ body {
   width: 62%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
+  .wrap__menu .slogan {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px; }
+    .wrap__menu .slogan h2 {
+      color: #1CAF4B;
+      font-family: svn;
+      font-size: 33px;
+      border-bottom: 2px solid #FF8A3A;
+      display: inline-block;
+      padding: 10px 30px 0px; }
+  .wrap__menu #menu-mobile {
+    width: 100%; }
 
 .open-nav {
   font-size: 27px;
@@ -372,7 +389,10 @@ body {
     display: none; }
 
   .wrap_header .main_total .logo::before {
-    content: none; } }
+    content: none; }
+
+  .wrap__menu .slogan {
+    width: 85%; } }
 @media screen and (max-width: 575px) {
   .wrap_header .main_total .logo {
     width: 25%;
@@ -382,7 +402,18 @@ body {
     width: 75%; }
 
   .wrap_header {
-    padding: 3px 0px; } }
+    padding: 3px 0px; }
+
+  .wrap_header .main_total {
+    align-items: center; }
+
+  .wrap__menu .slogan {
+    padding: 0; }
+
+  .wrap__menu .slogan h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #FF8A3A;
+    padding: 10px 10px 0px; } }
 .wrap_footer {
   padding: 30px 0px;
   background: white; }

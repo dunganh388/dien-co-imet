@@ -61,6 +61,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    .slogan {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+        h2 {
+            color: #1CAF4B;
+            font-family: svn;
+            font-size: 33px;
+            border-bottom: 2px solid #FF8A3A;
+            display: inline-block;
+            padding: 10px 30px 0px;
+        }
+    }
+    #menu-mobile {
+        width: 100%;
+    }
 }
 
 .open-nav {
@@ -401,6 +418,9 @@
     .wrap_header .main_total .logo::before {
         content: none;
     }
+    .wrap__menu .slogan {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 575px){
@@ -413,5 +433,16 @@
     }
     .wrap_header {
         padding: 3px 0px;
+    }
+    .wrap_header .main_total {
+       align-items: center;
+    }
+    .wrap__menu .slogan {
+        padding: 0;
+    }
+    .wrap__menu .slogan h2 {
+        font-size: 16px;
+        border-bottom: 1px solid #FF8A3A;
+        padding: 10px 10px 0px;
     }
 }
